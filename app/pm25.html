@@ -19,7 +19,7 @@ $.ajax({
 
         for(var i = 0, j = 0; i < len; i++) {
             json = res[i]
-            if(json.position_name && json.pm2_5 >= 10) {
+            if(json.position_name) {
                 str[j++] = json.position_name + " : " + json.pm2_5;
                 str[j++] = "<br>";
             }
