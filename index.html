@@ -12,7 +12,7 @@ tagline: Supporting tagline
 	  			{% assign post = site.posts.first %}
 	  			{% assign content = post.content %}
 				{% if post.title %}
-				    <li class="home">{{ post.date | date: '%d %B, %Y' }} &raquo; <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a></li>
+				    <li class="home">{{ post.date | date: '%Y-%B-%d' }} &raquo; <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a></li>
 				{% endif %}
 			{% endfor %}
 		</ul>
@@ -23,8 +23,8 @@ tagline: Supporting tagline
   <h3>Slides</h3>
 	<div class="posts">
 		<ul>
-      <li class="home">20 March, 2013 &raquo; <a target="blank" href="http://prezi.com/fjcvm-bxlyo7/storm-ex-share/">STORM EX. SHARE</a></li>
-      <li class="home">02 March, 2013 &raquo; <a target="blank" href="/misc/unix-history.html">UNIX HISTORY SHARE</a></li>
+      <li class="home">2013-04-02 &raquo; <a target="blank" href="/misc/unix-history.html">UNIX HISTORY SHARE</a></li>
+      <li class="home">2013-03-20 &raquo; <a target="blank" href="http://prezi.com/fjcvm-bxlyo7/storm-ex-share/">STORM EX. SHARE</a></li>
 		</ul>
 	</div>
 
@@ -33,8 +33,8 @@ tagline: Supporting tagline
   <h3>Apps & Links</h3>
 	<div class="posts">
 		<ul>
-      <li class="home">02 April, 2013 &raquo; <a target="blank" href="/app/pm.html">PM2.5 USA DATA</a></li>
-      <li class="home">25 March, 2013 &raquo; <a target="blank" href="/app/pm25.html">PM2.5 detail</a></li>
+      <li class="home">2013-04-02 &raquo; <a target="blank" href="/app/pm.html">PM2.5 USA DATA</a></li>
+      <li class="home">2013-03-25 &raquo; <a target="blank" href="/app/pm25.html">PM2.5 detail</a></li>
 		</ul>
 	</div>
 </div>
