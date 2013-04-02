@@ -5,6 +5,8 @@
 	<meta charset="utf-8">
 	<title>PM2.5 of beijing</title>
 	<script type='text/javascript'>
+    var msg;
+
 		function showMsg(o) {
 			var item = o.query.results.rss.channel.item[0];
 
@@ -13,7 +15,7 @@
 			document.getElementById("desc").innerHTML = item.Desc;
 			document.getElementById("time").innerHTML = item.ReadingDateTime;
 
-      var msg = "The conc of PM2.5 at " + item.ReadingDateTime + " is " + item.Conc + ", it's " + item.Desc;
+      msg = "The conc of PM2.5 at " + item.ReadingDateTime + " is " + item.Conc + ", it's " + item.Desc;
 		}
 	</script>
 </head>
