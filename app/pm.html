@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>PM2.5 of beijing</title>
+	<script type='text/javascript'>
+		function showMsg(o) {
+			var item = o.query.results.rss.channel.item[0];
+
+			document.getElementById("aqi").innerHTML = item.AQI;
+			document.getElementById("pm").innerHTML = item.Conc;
+			document.getElementById("desc").innerHTML = item.Desc;
+			document.getElementById("time").innerHTML = item.ReadingDateTime;
+		}
+	</script>
+</head>
+
+<body>
+	<p>北京空气质量指数(美大使馆数据)</p>
+	<p>
+		<b>AQI:</b> <span id="aqi"></span><br />
+		<b>PM2.5:</b> <span id="pm"></span><br />
+		<b>Desc:</b> <span id="desc"></span><br />
+		<b>GetTime:</b> <span id="time"></span>
+	</p>
+	<script src='http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20xml%20where%20url%3D%22http%3A%2F%2Fwww.beijingaqifeed.com%2FBeijingAQI%2FBeijingAir.xml%22&format=json&diagnostics=true&callback=showMsg'></script>
+</body>
+
+</html>
