@@ -16,8 +16,7 @@ author :
   email : chengherui@gmail.com
   weibo : 木登WiN
   gravatar :
-    url : https://secure.gravatar.com/avatar/7e0d24705b51291839792a3a5a0d6328?s=…akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png
-    caption : Looking snazzy...
+    url : https://secure.gravatar.com/avatar/7e0d24705b51291839792a3a5a0d6328?s=420&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -33,7 +32,7 @@ author :
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
 JB :
-  version : 0.2.13
+  #version : 0.2.13
 
   # All links will be namespaced by BASE_PATH if defined.
   # Links in your website should always be prefixed with {{BASE_PATH}}
@@ -80,19 +79,6 @@ JB :
   # Set 'provider' to the comment provider you want to use.
   # Set 'provider' to false to turn commenting off globally.
   #
-  comments :
-    provider : disqus
-    disqus :
-      short_name : zensavona
-    livefyre :
-      site_id : 123
-    intensedebate :
-      account : 123abc
-    facebook :
-      appid : 123
-      num_posts: 5
-      width: 580
-      colorscheme: light
    
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
