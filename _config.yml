@@ -9,16 +9,11 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Cheng Herui
+title : chengherui.github.com
 tagline: Just coding
 author :
   name : Cheng Herui
-  email : chengherui@gmail.com
   github : chengherui
-  weibo : chengherui
-  weiboNick : 木登WiN
-  gravatar :
-    url : https://secure.gravatar.com/avatar/7e0d24705b51291839792a3a5a0d6328?s=420&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -74,8 +69,6 @@ JB :
   # Some JB helpers refer to these paths; change theme here if needed.
   #
   archive_path: /archive.html
-  categories_path : /categories.html
-  tags_path : /tags.html
 
   # Settings for comments helper
   # Set 'provider' to the comment provider you want to use.

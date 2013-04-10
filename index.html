@@ -5,7 +5,7 @@ tagline: Supporting tagline
 {% include JB/setup %}
 
 <div class="blog-index">
-<h3>Essays</h3>
+  <h3>Essays</h3>
 	<div class="posts">
 		<ul>
   			{% for post in site.posts %}
@@ -15,6 +15,26 @@ tagline: Supporting tagline
 				    <li class="home">{{ post.date | date: '%d %B, %Y' }} &raquo; <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a></li>
 				{% endif %}
 			{% endfor %}
+		</ul>
+	</div>
+
+  <br>
+
+  <h3>Slides</h3>
+	<div class="posts">
+		<ul>
+      <li class="home">2013-04-02 &raquo; <a target="blank" href="/misc/unix-history.html">UNIX HISTORY SHARE</a></li>
+      <li class="home">2013-03-20 &raquo; <a target="blank" href="http://prezi.com/fjcvm-bxlyo7/storm-ex-share/">STORM EX. SHARE</a></li>
+		</ul>
+	</div>
+
+  <br>
+
+  <h3>Apps & Links</h3>
+	<div class="posts">
+		<ul>
+      <li class="home">2013-04-02 &raquo; <a target="blank" href="/app/pm.html">PM2.5 USA DATA</a></li>
+      <li class="home">2013-03-25 &raquo; <a target="blank" href="/app/pm25.html">PM2.5 detail</a></li>
 		</ul>
 	</div>
 </div>
