@@ -40,5 +40,5 @@
 	//get backend script via Image
 	var img = new Image(1, 1);
 	//backend.name = servername
-	img.src = 'http://backend.com/1.gif?' + args;
+	img.src = 'http://10.235.160.146/1.gif?' + args;
 })();
