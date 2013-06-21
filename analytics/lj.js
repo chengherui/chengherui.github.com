@@ -1,23 +1,27 @@
 (function () {
 	var params = {};
-	//Document对象数据
+
+	//Document data
 	if(document) {
 		params.domain = document.domain || '';
 		params.url = document.URL || '';
 		params.title = document.title || '';
 		params.referrer = document.referrer || '';
 	}
-	//Window对象数据
+
+	//Window data
 	if(window && window.screen) {
 		params.sh = window.screen.height || 0;
 		params.sw = window.screen.width || 0;
 		params.cd = window.screen.colorDepth || 0;
 	}
-	//navigator对象数据
+
+	//navigator data
 	if(navigator) {
 		params.lang = navigator.language || '';
 	}
-	//解析_maq配置
+
+	//analytics _maq
 	if(_maq) {
 		for(var i in _maq) {
 			switch(_maq[i][0]) {
@@ -29,7 +33,8 @@
 			}
 		}
 	}
-	//拼接参数串
+
+	//get args
 	var args = '';
 	for(var i in params) {
 		if(args != '') {
@@ -38,8 +43,8 @@
 		args += i + '=' + encodeURIComponent(params[i]);
 	}
 
-	//通过Image对象请求后端脚本
+	//get backend script via Image
 	var img = new Image(1, 1);
-	//backend.jiqi实际需要替换为后端处理的机器的servername
+	//backend.name = servername
 	img.src = 'http://backend.name/1.gif?' + args;
 })();
